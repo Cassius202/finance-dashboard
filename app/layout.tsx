@@ -7,7 +7,6 @@ import RootHeader from "@/components/RootHeader";
 import SideBar from "@/components/sidebar/SideBar";
 import { SidebarProvider } from "@/components/sidebar-context";
 import Main from "@/components/Main";
-import { useSidebar } from "@/components/sidebar-context";
 const interSans = Inter({
   variable: "--font-inter", // CSS variable name
   subsets: ["latin"],

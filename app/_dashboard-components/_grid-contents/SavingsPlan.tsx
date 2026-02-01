@@ -27,7 +27,7 @@ const SavingsPlan = () => {
           </button>
         </div>
 
-        <div className="grid grid-cols-2 lg:grid-cols-1 gap-3">
+        <div className="grid grid-cols-1 gap-3">
           {savings.map((plan) => (
             <SavingsCard key={plan.id} plan={plan} />
           ))}
@@ -40,7 +40,7 @@ const SavingsPlan = () => {
         </div>
 
         {/* See All Plans button */}
-        <button className="mt-6 flex w-full justify-center">
+        <button className="mt-6 flex lg:w-full justify-center">
           <Link
             href="/savings"
             className={cn(

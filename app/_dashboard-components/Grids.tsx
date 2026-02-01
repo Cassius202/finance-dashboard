@@ -11,7 +11,7 @@ const Grids = () => {
   return (
     <div className="px-4 mt-4 gap-2 grid grid-cols-10 mb-30">
       <Wallet />
-      <div id="second div" className="md:col-span-5 lg:col-span-6 grid grid-cols-1 lg:grid-rows-[122px_1fr] gap-2">
+      <div id="second div" className="col-span-10 md:col-span-5 lg:col-span-6 grid grid-cols-1 lg:grid-rows-[122px_1fr] gap-2">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-2">
             {
             secondaryStats.map((stat, index) => {

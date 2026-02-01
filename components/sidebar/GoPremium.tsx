@@ -14,7 +14,7 @@ const GoPremium = ( {isClosed} : {isClosed: boolean}  ) => {
         <UpgradeBtn />
       </div>
     </div> : <div className="w-full mt-auto mb-4 flex justify-center ">
-       <button className="p-1.5 rounded bg-amber-500 text-white aspect-square group relative cursor-pointer"><FaCrown />
+       <button className="p-1.5 rounded ml-2 bg-amber-500 text-white aspect-square group relative cursor-pointer hover:scale-105"><FaCrown />
        <span className="tooltip -translate-y-4 cursor-pointer">Upgrade to Premium</span>
        </button>
       

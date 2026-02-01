@@ -71,6 +71,7 @@ body {
  .tooltip {
   @apply absolute cursor-pointer left-full ml-2 bg-slate-300 text-slate-950 dark:bg-slate-800 dark:text-white text-xs rounded-md px-2 py-1 whitespace-nowrap opacity-0 pointer-events-none transition-opacity group-hover:opacity-100;
  }
+
  }
 .active_dot {
   animation: beep 3s infinite;

@@ -16,14 +16,14 @@ const RootHeader = () => {
   const { isClosed, setIsClosed } = useSidebar();
   return (
     <header className={cn("fixed top-0 left-0 z-40 text-sm w-screen pl-52 h-14 flex items-center justify-between pr-2 transition-[padding]", isClosed && "pl-20")} >
-      <div className="p-1 bg-slate-100 hover:scale-105 transition-transform cursor-pointer dark:bg-slate-800 rounded"
+      <button className="p-1 bg-slate-100 hover:scale-105 transition-transform cursor-pointer dark:bg-slate-800 rounded max-sm:hidden"
         onClick={(e) => {
           e.stopPropagation();
           setIsClosed(prev => !prev)
         }}  
         >
           <ChevronsLeft className={cn(isClosed && "transition-transform rotate-180")} size={17} />
-        </div>
+        </button>
       <form className="h-9 relative max-md:flex justify-center">
         <Search
           size={18}

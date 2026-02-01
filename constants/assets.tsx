@@ -1,4 +1,4 @@
-import { AccountSummary, MonthlyEarning, NavLinkProps, Questions, SavingsPlans, StatItem } from "./interfaces";
+import { AccountSummary, MonthlyEarning, NavLinkProps, Questions, SavingsPlans, StatItem, Transaction } from "./interfaces";
 
 import { 
   Grid2X2, 
@@ -193,5 +193,100 @@ export const savings: SavingsPlans[] = [
     target: 45000,
     amountSaved: 45000,
     icon: Wallet,
+  },
+];
+
+
+export const transactionHistory: Transaction[] = [
+  {
+    id: "tx_001",
+    description: "Apple MacBook Pro M3",
+    date: "2024-05-20",
+    price: 1999.99,
+    status: "success",
+  },
+  {
+    id: "tx_002",
+    description: "Starbucks Coffee",
+    date: "2024-05-21",
+    price: 5.50,
+    status: "failed",
+  },
+  {
+    id: "tx_003",
+    description: "Monthly Rent",
+    date: "2024-06-01",
+    price: 1200.00,
+    status: "success",
+  },
+  {
+    id: "tx_004",
+    description: "Amazon Web Services",
+    date: "2024-06-02",
+    price: 42.15,
+    status: "success",
+  },
+  {
+    id: "tx_005",
+    description: "Uber Trip",
+    date: "2024-06-03",
+    price: 18.50,
+    status: "success",
+  },
+  {
+    id: "tx_006",
+    description: "Gym Membership",
+    date: "2024-06-05",
+    price: 65.00,
+    status: "failed",
+  },
+  {
+    id: "tx_007",
+    description: "Grocery Store",
+    date: "2024-06-07",
+    price: 112.30,
+    status: "success",
+  },
+  {
+    id: "tx_008",
+    description: "Netflix Subscription",
+    date: "2024-06-10",
+    price: 15.99,
+    status: "success",
+  },
+  {
+    id: "tx_009",
+    description: "Freelance Payment",
+    date: "2024-06-12",
+    price: 850.00,
+    status: "success",
+  },
+  {
+    id: "tx_010",
+    description: "Adobe Creative Cloud",
+    date: "2024-06-15",
+    price: 52.99,
+    status: "failed",
+  },
+  {
+    id: "tx_011",
+    description: "Electric Bill",
+    date: "2024-06-18",
+    price: 89.40,
+    status: "success",
+  },
+  {
+    id: "tx_012",
+    description: "Local Bistro Dinner",
+    date: "2024-06-20",
+    price: 74.20,
+    status: "success",
+  },
+  {
+    id: "tx_013",
+    description: "App Store Purchase",
+    date: "2024-06-22",
+    price: 2.99,
+    status: "success",
   },
 ];

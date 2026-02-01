@@ -32,9 +32,6 @@ jobs:
 
       - name: Build and Export
         run: npm run export
-        env:
-          # If you added basePath in next.config.js, uncomment and set:
-          # NEXT_PUBLIC_BASE_PATH: /finance-dashboard
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

@@ -55,4 +55,12 @@ export interface SavingsPlans {
   amountSaved: number;
   icon: LucideIcon;
 }
+
+export interface Transaction {
+  id: string;
+  description: string;
+  date: string; // Or Date object
+  price: number;
+  status: "success" | "failed" | "pending"; // Added pending as a common use case
+}
   
