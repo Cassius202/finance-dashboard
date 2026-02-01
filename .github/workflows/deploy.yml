@@ -2,12 +2,17 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: [ main ]
+    branches: [main]
+  workflow_dispatch:
 
 permissions:
   contents: read
   pages: write
   id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
 
 jobs:
   build:
@@ -16,7 +21,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Setup Node
+      - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 20
@@ -25,13 +30,11 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Build
-        run: npm run build
-        env:
-          NEXT_PUBLIC_BASE_PATH: /finance-dashboard   # change to your repo name
-
-      - name: Export
+      - name: Build and Export
         run: npm run export
+        env:
+          # If you added basePath in next.config.js, uncomment and set:
+          # NEXT_PUBLIC_BASE_PATH: /finance-dashboard
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
